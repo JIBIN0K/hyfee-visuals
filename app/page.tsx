@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Presets from "../components/Presets"
 import Portfolio from "../components/Portfolio"
+import BeforeAfter from "@/components/BeforeAfter"
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <Hero />
 
       <Presets />
+      
+      <BeforeAfter />
 
       <Portfolio />
 
