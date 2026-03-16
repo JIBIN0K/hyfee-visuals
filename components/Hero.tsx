@@ -1,24 +1,37 @@
 export default function Hero() {
   return (
-    <section className="h-[90vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black to-gray-900 text-white px-6">
+    <section
+      className="h-screen flex flex-col items-center justify-center text-center text-white relative"
+      style={{
+        backgroundImage: "url('/hero.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
 
-      <h1 className="text-6xl font-bold mb-6 tracking-wide">
-        HYFEE VISUALS
-      </h1>
+      <div className="absolute inset-0 bg-black/60"></div>
 
-      <p className="text-lg text-gray-300 max-w-xl mb-8">
-        Cinematic Photography • Lightroom Presets • Professional Editing
-      </p>
+      <div className="relative z-10">
 
-      <div className="flex gap-4">
+        <h1 className="text-7xl font-bold tracking-widest mb-6">
+          HYFEE VISUALS
+        </h1>
 
-        <button className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
-          Explore Presets
-        </button>
+        <p className="text-lg text-gray-300 mb-8">
+          Cinematic Photography • Lightroom Presets • Professional Editing
+        </p>
 
-        <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
-          View Portfolio
-        </button>
+        <div className="flex gap-5 justify-center">
+
+          <button className="bg-white text-black px-7 py-3 rounded-xl font-semibold hover:scale-105 transition">
+            Explore Presets
+          </button>
+
+          <button className="border border-white px-7 py-3 rounded-xl hover:bg-white hover:text-black transition">
+            View Portfolio
+          </button>
+
+        </div>
 
       </div>
 
