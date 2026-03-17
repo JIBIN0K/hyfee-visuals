@@ -1,3 +1,6 @@
+import { FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-gray-900 text-gray-400 py-10 text-center">
@@ -18,30 +21,32 @@ export default function Footer() {
           Kerala • India
         </p>
 
-        {/* Social Links */}
-        <div className="flex justify-center gap-6 mb-6">
+        {/* Social Icons */}
+        <div className="flex justify-center gap-8 text-2xl mb-6">
 
           <a
             href="https://www.instagram.com/_.hyfee._"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
-            Instagram
+            <FaInstagram />
           </a>
 
           <a
             href="https://wa.me/918943557986"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
-            WhatsApp
+            <FaWhatsapp />
           </a>
 
           <a
             href="mailto:hyfeetube@gmail.com"
             className="hover:text-white transition"
           >
-            Email
+            <MdEmail />
           </a>
 
         </div>
