@@ -4,13 +4,13 @@ import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slide
 
 export default function BeforeAfter() {
   return (
-    <section className="bg-black text-white py-20 px-10">
+    <section className="bg-black text-white py-16 px-6">
 
       <h2 className="text-4xl font-bold text-center mb-10">
         Before & After
       </h2>
 
-      <div className="max-w-2xl mx-auto rounded-xl overflow-hidden">
+      <div className="max-w-2xl mx-auto rounded-xl overflow-hidden shadow-xl">
 
         <ReactCompareSlider
           itemOne={
