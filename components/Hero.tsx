@@ -9,39 +9,61 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* Cinematic dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
 
-      <div className="relative z-10 px-6">
+      <div className="relative z-10 px-6 max-w-3xl">
 
         {/* Title */}
-        <h1 className="text-7xl font-semibold tracking-widest mb-6">
+        <h1 className="text-7xl md:text-8xl font-semibold tracking-[0.3em] mb-6">
           HYFEE VISUALS
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg text-gray-300 mb-10 tracking-wide">
+        <p className="text-lg text-gray-300 mb-12 tracking-wide">
           Cinematic Photography • Lightroom Presets • Professional Editing
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-6 justify-center">
+        <div className="flex gap-6 justify-center flex-wrap">
 
-        <a
+          {/* Explore Presets */}
+          <a
             href="#presets"
-            className="px-8 py-3 rounded-xl font-semibold transition
-            bg-purple-600 hover:bg-purple-700 text-white"
-        >
+            className="
+            px-8 py-3
+            rounded-xl
+            border border-purple-500
+            text-purple-400
+            font-semibold
+            transition duration-300
+            hover:bg-purple-600
+            hover:text-white
+            hover:border-purple-600
+            hover:scale-105
+            "
+          >
             Explore Presets
-        </a>
+          </a>
 
-        <a
+          {/* View Portfolio */}
+          <a
             href="#portfolio"
-            className="px-8 py-3 rounded-xl border border-purple-500
-            text-purple-400 hover:bg-purple-600 hover:text-white transition"
-        >
+            className="
+            px-8 py-3
+            rounded-xl
+            border border-purple-500
+            text-purple-400
+            font-semibold
+            transition duration-300
+            hover:bg-purple-600
+            hover:text-white
+            hover:border-purple-600
+            hover:scale-105
+            "
+          >
             View Portfolio
-        </a>
+          </a>
 
         </div>
 
