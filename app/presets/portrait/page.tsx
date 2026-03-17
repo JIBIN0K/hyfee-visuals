@@ -1,24 +1,24 @@
-export default function CinematicPreset() {
+export default function PortraitPreset() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6">
 
       <h1 className="text-4xl font-bold mb-6">
-        Cinematic Lightroom Preset Pack
+        Portrait Preset Pack
       </h1>
 
       <img
-        src="/photo1.jpg"
-        alt="Cinematic preset"
+        src="/photo4.jpg"
+        alt="Portrait preset"
         className="w-full max-w-xl rounded-xl mb-6"
       />
 
       <p className="text-gray-400 max-w-xl text-center mb-6">
-        Achieve cinematic color grading with one click. Perfect for travel,
-        portraits and moody edits. Works on Lightroom Mobile and Desktop.
+        Professional portrait tones that enhance skin colors and create a
+        soft cinematic look for portrait photography.
       </p>
 
       <div className="text-2xl font-semibold mb-6">
-        ₹199
+        ₹299
       </div>
 
       <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
