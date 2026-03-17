@@ -27,21 +27,21 @@ export default function Hero() {
         {/* Buttons */}
         <div className="flex gap-6 justify-center">
 
-          {/* Explore Presets */}
-          <a
+        <a
             href="#presets"
-            className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-200 hover:scale-105 transition duration-300"
-          >
+            className="px-8 py-3 rounded-xl font-semibold transition
+            bg-purple-600 hover:bg-purple-700 text-white"
+        >
             Explore Presets
-          </a>
+        </a>
 
-          {/* View Portfolio */}
-          <a
+        <a
             href="#portfolio"
-            className="border border-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-black hover:scale-105 transition duration-300"
-          >
+            className="px-8 py-3 rounded-xl border border-purple-500
+            text-purple-400 hover:bg-purple-600 hover:text-white transition"
+        >
             View Portfolio
-          </a>
+        </a>
 
         </div>
 
