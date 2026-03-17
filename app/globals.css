@@ -1,38 +1,19 @@
 @import "tailwindcss";
 
-/* =========================
-   Color System
-========================= */
-
+/* Color system */
 :root {
 
   --background: #0a0a0a;
   --foreground: #ffffff;
 
-  /* Cinematic accent */
   --accent: #7c3aed;
   --accent-soft: #a78bfa;
 
-  /* Typography */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 }
 
-
-/* =========================
-   Theme Mapping
-========================= */
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-
-/* =========================
-   Body
-========================= */
-
+/* Body styling */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -41,95 +22,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* =========================
-   Headings
-========================= */
-
-h1,h2,h3,h4,h5,h6{
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   letter-spacing: 0.05em;
 }
 
-h1{
-  font-size:3.5rem;
-  font-weight:600;
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
-h2{
-  font-size:2.5rem;
-  font-weight:600;
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-
-/* =========================
-   Paragraphs
-========================= */
-
-p{
-  line-height:1.7;
-  font-size:0.95rem;
-  color:#bdbdbd;
-}
-
-
-/* =========================
-   Selection Color
-========================= */
-
-::selection{
-  background: var(--accent);
-  color: white;
-}
-
-
-/* =========================
-   Scrollbar (modern)
-========================= */
-
-::-webkit-scrollbar{
-  width:8px;
-}
-
-::-webkit-scrollbar-track{
-  background:#0a0a0a;
-}
-
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(
-    180deg,
-    #7c3aed,
-    #a78bfa
-  );
-  border-radius:10px;
-}
-
-
-/* =========================
-   Smooth Scrolling
-========================= */
-
-html{
-  scroll-behavior:smooth;
-}
-
-
-/* =========================
-   Cinematic Section Glow
-========================= */
-
-.section-glow{
-  position:relative;
-}
-
-.section-glow::before{
-  content:"";
-  position:absolute;
-  inset:-100px;
-  background:radial-gradient(
-    circle at center,
-    rgba(124,58,237,0.15),
-    transparent 70%
-  );
-  z-index:-1;
+p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #bdbdbd;
 }
