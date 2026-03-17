@@ -7,6 +7,7 @@ import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
 import Services from "@/components/Services"
 import CTA from "@/components/CTA"
+import WhatsAppButton from "@/components/WhatsAppButton"
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       <Contact />
 
       <Footer />
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton />
 
     </main>
   )
