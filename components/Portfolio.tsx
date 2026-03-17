@@ -1,4 +1,5 @@
 export default function Portfolio() {
+
   const images = [
     "/photo1.jpg",
     "/photo2.jpg",
@@ -9,34 +10,32 @@ export default function Portfolio() {
   ]
 
   return (
-    <section id="portfolio" className="bg-black text-white py-24 px-10">
+    <section id="portfolio" className="bg-black text-white py-32 px-10">
 
-      {/* Section Title */}
-      <h2 className="text-5xl font-semibold text-center mb-6 tracking-wide">
+      {/* Title */}
+      <h2 className="text-5xl text-center font-semibold tracking-wide mb-6">
         Portfolio
       </h2>
 
-      {/* Professional Introduction */}
-      <p className="max-w-2xl mx-auto text-center text-gray-400 mb-16 leading-relaxed">
-        Capturing cinematic moments through light, emotion, and storytelling.
-        HYFEE VISUALS focuses on creating powerful visuals that blend natural
-        aesthetics with a cinematic editing style. From portraits and cultural
-        moments to travel photography, every frame is crafted to feel timeless
-        and visually immersive.
+      {/* Short intro */}
+      <p className="max-w-xl mx-auto text-center text-gray-400 mb-20 leading-relaxed">
+        Cinematic storytelling through light, emotion and natural aesthetics.
+        HYFEE VISUALS focuses on creating timeless imagery with a cinematic
+        editing style that captures authentic moments.
       </p>
 
-      {/* Image Grid */}
-      <div className="grid md:grid-cols-3 gap-6">
+      {/* Image grid */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
 
         {images.map((img, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-xl group"
+            className="overflow-hidden rounded-2xl group"
           >
             <img
               src={img}
               alt="portfolio"
-              className="w-full h-[320px] object-cover transform group-hover:scale-110 transition duration-500"
+              className="w-full h-[420px] object-cover transform group-hover:scale-110 transition duration-700"
             />
           </div>
         ))}
