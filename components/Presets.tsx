@@ -15,7 +15,7 @@ export default function Presets() {
     {
       name: "Cinematic Pack",
       price: "₹399",
-      image: "/photo1.jpg",
+      image: "/cinematic.jpg",
       slug: "cinematic",
       badge: "Coming Soon",
       featured: false,
@@ -24,7 +24,7 @@ export default function Presets() {
     {
       name: "Moody Travel Pack",
       price: "₹449",
-      image: "/photo2.jpg",
+      image: "/moody.jpg",
       slug: "moody-travel",
       badge: "Coming Soon",
       featured: false,
@@ -33,7 +33,7 @@ export default function Presets() {
     {
       name: "Golden Hour Pack",
       price: "₹399",
-      image: "/photo3.jpg",
+      image: "/golden.jpg",
       slug: "golden-hour",
       badge: "Coming Soon",
       featured: false,
@@ -42,7 +42,7 @@ export default function Presets() {
     {
       name: "Portrait Pack",
       price: "₹499",
-      image: "/photo4.jpg",
+      image: "/portrait.jpg",
       slug: "portrait",
       badge: "Coming Soon",
       featured: false,
@@ -53,7 +53,6 @@ export default function Presets() {
   return (
     <section id="presets" className="bg-black py-28 px-6">
 
-      {/* Section Title */}
       <div className="text-center mb-16">
 
         <h2 className="text-5xl font-semibold text-white tracking-wide">
@@ -67,7 +66,6 @@ export default function Presets() {
 
       </div>
 
-      {/* Preset Grid */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
 
         {presets.map((preset, index) => (
