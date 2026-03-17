@@ -8,12 +8,13 @@ export default function CinematicPreset() {
 
       <img
         src="/photo1.jpg"
+        alt="preset"
         className="w-full max-w-xl rounded-xl mb-6"
       />
 
       <p className="text-gray-400 max-w-xl text-center mb-6">
-        Achieve cinematic color grading with one click. Perfect for travel,
-        portraits and moody edits. Works on Lightroom Mobile and Desktop.
+        Achieve cinematic color grading with one click. Works on Lightroom
+        Mobile and Desktop. Perfect for travel, portraits and moody edits.
       </p>
 
       <div className="text-2xl font-semibold mb-6">
