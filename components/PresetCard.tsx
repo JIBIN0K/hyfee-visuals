@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 type Props = {
   name: string
   price: string
@@ -24,9 +26,12 @@ export default function PresetCard({ name, price, image }: Props) {
           {price}
         </p>
 
-        <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800">
+        <Link
+          href="/presets/cinematic"
+          className="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 inline-block"
+        >
           Buy Now
-        </button>
+        </Link>
 
       </div>
 
