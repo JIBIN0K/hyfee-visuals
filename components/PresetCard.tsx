@@ -19,9 +19,13 @@ export default function PresetCard({ name, price, image, slug }: Props) {
 
       <div className="p-5 text-center">
 
-        <h3 className="text-xl font-semibold mb-2">{name}</h3>
+        <h3 className="text-xl font-semibold mb-2">
+          {name}
+        </h3>
 
-        <p className="text-gray-500 mb-4">{price}</p>
+        <p className="text-gray-500 mb-4">
+          {price}
+        </p>
 
         <Link
           href={`/presets/${slug}`}
@@ -31,6 +35,7 @@ export default function PresetCard({ name, price, image, slug }: Props) {
         </Link>
 
       </div>
+
     </div>
   )
 }

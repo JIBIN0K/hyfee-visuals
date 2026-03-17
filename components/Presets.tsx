@@ -7,26 +7,26 @@ export default function Presets() {
       name: "Cinematic Pack",
       price: "₹199",
       image: "/photo1.jpg",
-      slug: "cinematic"
+      slug: "cinematic",
     },
     {
       name: "Moody Travel Pack",
       price: "₹249",
       image: "/photo2.jpg",
-      slug: "moody-travel"
+      slug: "moody-travel",
     },
     {
       name: "Golden Hour Pack",
       price: "₹199",
       image: "/photo3.jpg",
-      slug: "golden-hour"
+      slug: "golden-hour",
     },
     {
       name: "Portrait Pack",
       price: "₹299",
       image: "/photo4.jpg",
-      slug: "portrait"
-    }
+      slug: "portrait",
+    },
   ]
 
   return (
