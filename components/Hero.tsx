@@ -1,6 +1,7 @@
 export default function Hero() {
   return (
     <section
+      id="home"
       className="h-screen flex flex-col items-center justify-center text-center text-white relative"
       style={{
         backgroundImage: "url('/hero.jpg')",
@@ -8,33 +9,43 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 px-6">
 
-        <h1 className="text-7xl font-bold tracking-widest mb-6">
+        {/* Title */}
+        <h1 className="text-7xl font-semibold tracking-widest mb-6">
           HYFEE VISUALS
         </h1>
 
-        <p className="text-lg text-gray-300 mb-8">
+        {/* Subtitle */}
+        <p className="text-lg text-gray-300 mb-10 tracking-wide">
           Cinematic Photography • Lightroom Presets • Professional Editing
         </p>
 
-        <div className="flex gap-5 justify-center">
+        {/* Buttons */}
+        <div className="flex gap-6 justify-center">
 
-          <button className="bg-white text-black px-7 py-3 rounded-xl font-semibold hover:scale-105 transition">
+          {/* Explore Presets */}
+          <a
+            href="#presets"
+            className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-200 hover:scale-105 transition duration-300"
+          >
             Explore Presets
-          </button>
+          </a>
 
-          <button className="border border-white px-7 py-3 rounded-xl hover:bg-white hover:text-black transition">
+          {/* View Portfolio */}
+          <a
+            href="#portfolio"
+            className="border border-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-black hover:scale-105 transition duration-300"
+          >
             View Portfolio
-          </button>
+          </a>
 
         </div>
 
       </div>
-
     </section>
   )
 }

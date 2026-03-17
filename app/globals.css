@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Color system */
+/* Root color + typography system */
 :root {
   --background: #000000;
   --foreground: #ffffff;
@@ -10,12 +10,18 @@
   --font-body: 'Inter', sans-serif;
 }
 
+/* Tailwind theme mapping */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
 
-/* Dark mode */
+/* Smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
@@ -40,10 +46,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
-/* Professional typography spacing */
+/* Typography scale */
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
@@ -54,8 +60,26 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Paragraph styling */
 p {
   line-height: 1.7;
   font-size: 0.95rem;
   color: #cfcfcf;
+}
+
+/* Buttons feel more premium */
+button {
+  transition: all 0.25s ease;
+}
+
+/* Improve image rendering */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
