@@ -6,7 +6,7 @@ export default function Presets() {
     {
       name: "HYFEE Exclusive Pack 🔥",
       price: "₹249",
-      image: "/hero.jpg",
+      image: "/premium.jpg",
       slug: "exclusive",
     },
     {
