@@ -4,6 +4,7 @@ import Presets from "../components/Presets"
 import Portfolio from "../components/Portfolio"
 import ExclusiveCard from "@/components/ExclusiveCard"
 import Contact from "@/components/Contact"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Portfolio />
 
       <Contact />
+
+      <Footer />
 
     </main>
   )
