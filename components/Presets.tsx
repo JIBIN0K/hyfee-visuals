@@ -4,6 +4,12 @@ export default function Presets() {
 
   const presets = [
     {
+      name: "HYFEE Exclusive Pack 🔥",
+      price: "₹249",
+      image: "/hero.jpg",
+      slug: "exclusive",
+    },
+    {
       name: "Cinematic Pack",
       price: "₹199",
       image: "/photo1.jpg",
@@ -33,7 +39,7 @@ export default function Presets() {
     <section className="bg-gray-100 py-20 px-10">
 
       <h2 className="text-4xl font-bold text-center mb-12">
-        Cinematic Lightroom Presets
+        Lightroom Preset Packs
       </h2>
 
       <div className="grid md:grid-cols-4 gap-8">
