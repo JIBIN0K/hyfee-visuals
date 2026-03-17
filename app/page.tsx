@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Presets from "../components/Presets"
 import Portfolio from "../components/Portfolio"
 import BeforeAfter from "@/components/BeforeAfter"
+import ExclusiveCard from "@/components/ExclusiveCard"
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
 
       <Hero />
 
-      <Presets />
+      <ExclusiveCard />
       
+      <Presets />
+
       <BeforeAfter />
 
       <Portfolio />
