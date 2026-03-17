@@ -36,7 +36,7 @@ export default function Presets() {
   ]
 
   return (
-    <section className="bg-gray-100 py-20 px-10">
+    <section id="presets" className="bg-gray-100 py-20 px-10">
 
       <h2 className="text-4xl font-bold text-center mb-12">
         Lightroom Preset Packs
