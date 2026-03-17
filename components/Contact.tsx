@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="text-3xl mb-3">📸</div>
           <h3 className="font-semibold text-lg mb-2">Instagram</h3>
           <p className="text-gray-400 text-sm">
-            @_hyfee._
+            @_.hyfee._
           </p>
         </a>
 
