@@ -54,8 +54,25 @@ export default function Footer() {
 
         </div>
 
-        {/* Divider (subtle premium touch) */}
+        {/* Divider */}
         <div className="w-20 h-[1px] bg-gray-800 mx-auto mb-6"></div>
+
+        {/* Legal Links (NEW - VERY IMPORTANT) */}
+        <div className="flex justify-center gap-6 text-xs text-gray-500 mb-6">
+
+          <a href="/privacy-policy" className="hover:text-white transition">
+            Privacy Policy
+          </a>
+
+          <a href="/terms" className="hover:text-white transition">
+            Terms
+          </a>
+
+          <a href="/refund-policy" className="hover:text-white transition">
+            Refund Policy
+          </a>
+
+        </div>
 
         {/* Copyright */}
         <p className="text-xs text-gray-500">
