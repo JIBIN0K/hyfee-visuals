@@ -14,32 +14,48 @@ export default function PrivacyPolicy() {
         <div className="space-y-6 text-sm leading-relaxed">
 
           <p>
-            HYFEE VISUALS respects your privacy. This policy explains how we collect and use your data.
+            HYFEE VISUALS values your privacy. This Privacy Policy explains how we handle your information when you use our website.
           </p>
 
           <h2 className="text-white font-semibold">1. Information We Collect</h2>
           <p>
-            We may collect your name, email, phone number, and usage data when you use our website.
+            We do not directly collect personal information through forms on this website.
+          </p>
+          <p>
+            However, if you choose to contact us via WhatsApp or Email, you may voluntarily provide personal information such as your name, phone number, or email address.
           </p>
 
-          <h2 className="text-white font-semibold">2. How We Use Data</h2>
+          <h2 className="text-white font-semibold">2. Usage Data</h2>
           <p>
-            We use your data to provide services, improve user experience, and communicate updates.
+            We may collect anonymous usage data such as pages visited, time spent on the site, and general interaction data to improve our website experience.
           </p>
 
           <h2 className="text-white font-semibold">3. Analytics</h2>
           <p>
-            We use analytics tools (like Vercel Analytics) to understand user behavior.
+            We use analytics tools (such as Vercel Analytics) to understand user behavior and improve website performance. These tools do not personally identify users.
           </p>
 
-          <h2 className="text-white font-semibold">4. Data Protection</h2>
+          <h2 className="text-white font-semibold">4. How We Use Information</h2>
           <p>
-            We do not sell your data. Your information is kept secure.
+            Any information you provide voluntarily is used only to respond to your inquiries or provide requested services.
           </p>
 
-          <h2 className="text-white font-semibold">5. Contact</h2>
+          <h2 className="text-white font-semibold">5. Data Protection</h2>
           <p>
-            📧 hyfeetube@gmail.com <br />
+            We do not sell, trade, or share your personal information with third parties. We take reasonable steps to protect your information.
+          </p>
+
+          <h2 className="text-white font-semibold">6. Third-Party Links</h2>
+          <p>
+            Our website may contain links to third-party platforms such as WhatsApp and Instagram. We are not responsible for their privacy practices.
+          </p>
+
+          <h2 className="text-white font-semibold">7. Contact</h2>
+          <p>
+            If you have any questions about this Privacy Policy, you can contact us:
+            <br />
+            📧 hyfeetube@gmail.com
+            <br />
             📱 +91 8943557986
           </p>
 
