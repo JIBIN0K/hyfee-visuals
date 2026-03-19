@@ -27,11 +27,18 @@ export default function Services() {
           </h3>
 
           <p className="text-gray-400 mb-5 flex-grow">
-            Portrait, outdoor and cinematic photoshoots crafted with a storytelling approach.
+            Cinematic portraits, outdoor shoots and premium visual storytelling.
           </p>
 
-          <p className="text-purple-400 font-semibold mb-6">
-            Starting ₹1999
+          {/* Premium Pricing Structure */}
+          <div className="text-sm text-gray-400 mb-4 space-y-1">
+            <p>Basic – ₹2999</p>
+            <p>Standard – ₹5999</p>
+            <p>Premium – ₹9999+</p>
+          </div>
+
+          <p className="text-xs text-gray-500 mb-6">
+            Custom packages available based on requirements
           </p>
 
           <a
@@ -59,7 +66,7 @@ export default function Services() {
           </p>
 
           <p className="text-purple-400 font-semibold mb-6">
-            ₹199 / 4 images
+            Starting ₹199 / 4 images
           </p>
 
           <a
