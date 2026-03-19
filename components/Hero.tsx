@@ -10,46 +10,46 @@ export default function Hero() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-black/75 backdrop-blur-[2px]"></div>
 
-      <div className="relative z-10 px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 px-6 max-w-3xl mx-auto">
 
         {/* Brand */}
         <h1 className="
-          text-4xl md:text-6xl 
+          text-3xl md:text-5xl 
           font-semibold 
-          tracking-[0.2em] 
-          mb-4
+          tracking-[0.3em] 
+          mb-6
         ">
           HYFEE VISUALS
         </h1>
 
-        {/* Main Headline */}
+        {/* Sub Headline (REFINED) */}
         <h2 className="
-          text-2xl md:text-4xl 
-          font-medium 
-          leading-tight 
+          text-lg md:text-2xl 
+          font-normal 
+          text-gray-300 
+          leading-relaxed 
           mb-4
         ">
-          Cinematic Photography <br className="hidden md:block" />
-          & Visual Storytelling 🎬
+          Cinematic Photography & Visual Storytelling
         </h2>
 
-        {/* Subtext */}
+        {/* Value Line */}
         <p className="
           text-sm md:text-base 
-          text-gray-300 
-          mb-6 
-          max-w-xl 
+          text-gray-400 
+          mb-8 
+          max-w-lg 
           mx-auto
         ">
           Turning your moments into premium cinematic visuals.
         </p>
 
-        {/* Trust Line */}
+        {/* Trust */}
         <p className="
           text-xs md:text-sm 
-          text-gray-400 
+          text-gray-500 
           mb-10
         ">
           Trusted by creators • Fast delivery • Premium quality
@@ -91,23 +91,6 @@ export default function Hero() {
             "
           >
             View Portfolio
-          </a>
-
-          {/* Tertiary */}
-          <a
-            href="#presets"
-            className="
-              px-8 py-3
-              rounded-xl
-              border border-gray-600
-              text-gray-300
-              font-semibold
-              hover:border-purple-500
-              hover:text-white
-              transition-all duration-300
-            "
-          >
-            Explore Presets
           </a>
 
         </div>
