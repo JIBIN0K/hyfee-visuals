@@ -84,11 +84,13 @@ export default function Hero() {
             className="
               px-8 py-3
               rounded-xl
-              border border-purple-500
-              text-purple-400
+              border border-purple-500/60
+              text-purple-300
               font-semibold
-              hover:bg-purple-600
+              hover:bg-purple-600/20
               hover:text-white
+              hover:border-purple-400
+              hover:shadow-md hover:shadow-purple-500/20
               transition-all duration-300
             "
           >
