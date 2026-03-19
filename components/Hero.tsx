@@ -87,10 +87,11 @@ export default function Hero() {
               border border-purple-500/60
               text-purple-300
               font-semibold
+              shadow-md shadow-purple-500/10
               hover:bg-purple-600/20
               hover:text-white
               hover:border-purple-400
-              hover:shadow-md hover:shadow-purple-500/20
+              hover:shadow-purple-500/30
               transition-all duration-300
             "
           >
