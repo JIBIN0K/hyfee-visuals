@@ -26,9 +26,10 @@ export default function Hero() {
 
         {/* Sub Headline (REFINED) */}
         <h2 className="
-          text-lg md:text-2xl 
-          font-normal 
-          text-gray-300 
+          text-base md:text-xl 
+          font-light 
+          text-gray-400 
+          tracking-wide 
           leading-relaxed 
           mb-4
         ">
