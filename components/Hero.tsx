@@ -25,7 +25,7 @@ export default function Hero() {
         </h1>
 
         {/* Sub Headline (REFINED) */}
-        <h2 className="
+        <h4 className="
           text-base md:text-xl 
           font-light 
           text-gray-400 
@@ -34,7 +34,7 @@ export default function Hero() {
           mb-4
         ">
           Cinematic Photography & Visual Storytelling
-        </h2>
+        </h4>
 
         {/* Value Line */}
         <p className="
