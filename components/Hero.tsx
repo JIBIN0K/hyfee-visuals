@@ -69,7 +69,8 @@ export default function Hero() {
               bg-gradient-to-r from-purple-600 to-purple-800
               text-white
               font-semibold
-              shadow-lg shadow-purple-500/30
+              shadow-lg shadow-purple-500/40
+              hover:shadow-purple-500/70
               hover:scale-105
               transition-all duration-300
             "
