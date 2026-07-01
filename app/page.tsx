@@ -8,6 +8,7 @@ import Footer from "@/components/Footer"
 import Services from "@/components/Services"
 import CTA from "@/components/CTA"
 import WhatsAppButton from "@/components/WhatsAppButton"
+import FeaturedPrompts from "@/components/FeaturedPrompts";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Navbar />
 
       <Hero />
+
+      <FeaturedPrompts />
 
       <Services />
 
