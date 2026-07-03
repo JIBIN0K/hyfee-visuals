@@ -9,18 +9,37 @@ interface CopyButtonProps {
 export default function CopyButton({ text }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
 
-  async function handleCopy() {
+    async function handleCopy() {
     try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
+        if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
 
-      setTimeout(() => {
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+
+        document.body.appendChild(textArea);
+
+        textArea.focus();
+        textArea.select();
+
+        document.execCommand("copy");
+
+        document.body.removeChild(textArea);
+        }
+
+        setCopied(true);
+
+        setTimeout(() => {
         setCopied(false);
-      }, 2000);
+        }, 2000);
     } catch (error) {
-      console.error("Copy failed:", error);
+        console.error("Copy failed:", error);
+        alert("Copy failed. Please check the browser console.");
     }
-  }
+    }
 
   return (
     <button
