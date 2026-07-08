@@ -2,12 +2,14 @@ import fluidPixelStretch from "./fluid-pixel-stretch";
 import mistyPrompt from "./misty-prompt";
 import goldenSunset from "./golden-sunset";
 import luminaPrompt from "./lumina-prompt";
+import monsoonPrompt from "./monsoon-prompt";
 
 export const prompts = [
     fluidPixelStretch,
     mistyPrompt,
     goldenSunset,
     luminaPrompt,
+    monsoonPrompt
 ];
 
 export function getPromptBySlug(slug: string) {
