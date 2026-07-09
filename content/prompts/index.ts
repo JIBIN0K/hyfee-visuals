@@ -3,13 +3,15 @@ import mistyPrompt from "./misty-prompt";
 import goldenSunset from "./golden-sunset";
 import luminaPrompt from "./lumina-prompt";
 import monsoonPrompt from "./monsoon-prompt";
+import fogPrompt from "./fog-prompt";
 
 export const prompts = [
     fluidPixelStretch,
     mistyPrompt,
     goldenSunset,
     luminaPrompt,
-    monsoonPrompt
+    monsoonPrompt,
+    fogPrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
