@@ -1,7 +1,7 @@
 const prompt = {
   slug: "fog-prompt",
 
-  title: "Fog Prompt",
+  title: "Foggy Prompt",
 
   description:
     "Transform any photo into a premium ultra-realistic cinematic fog masterpiece while preserving the main subject perfectly.",
