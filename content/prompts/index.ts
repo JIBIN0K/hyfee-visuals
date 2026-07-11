@@ -4,6 +4,7 @@ import goldenSunset from "./golden-sunset";
 import luminaPrompt from "./lumina-prompt";
 import monsoonPrompt from "./monsoon-prompt";
 import fogPrompt from "./fog-prompt";
+import minecraftPrompt from "./minecraft-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -12,6 +13,7 @@ export const prompts = [
     luminaPrompt,
     monsoonPrompt,
     fogPrompt,
+    minecraftPrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
