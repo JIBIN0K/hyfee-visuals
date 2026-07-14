@@ -1,53 +1,66 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa"
-import { MdEmail } from "react-icons/md"
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-900 text-gray-400 py-12 text-center">
-
-      <div className="max-w-4xl mx-auto px-6">
+    <footer className="border-t border-zinc-800 bg-black py-20">
+      <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
 
         {/* Brand */}
-        <h3 className="text-white text-lg font-semibold mb-2 tracking-wide">
-          HYFEE VISUALS
-        </h3>
 
-        <p className="text-sm text-gray-400 mb-4">
-          Cinematic Photography • Lightroom Presets • Professional Editing
-        </p>
+        <div className="text-center">
 
-        {/* Location */}
-        <p className="text-xs text-gray-500 mb-8">
-          Kerala • India
-        </p>
+          <div className="inline-flex rounded-full border border-purple-500/30 bg-purple-500/10 px-5 py-2">
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-10 text-2xl mb-8">
+            <span className="text-sm font-medium tracking-wide text-purple-300">
+              HYFEE VISUALS
+            </span>
 
-          {/* Instagram */}
+          </div>
+
+          <h3 className="mt-6 text-3xl font-bold tracking-tight text-white md:text-4xl">
+            Cinematic Visuals
+          </h3>
+
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-400">
+            Premium Photography • Lightroom Presets • Professional Editing •
+            AI Prompt Library
+          </p>
+
+          <p className="mt-4 text-sm text-zinc-500">
+            Kerala • India
+          </p>
+
+        </div>
+
+        {/* Social */}
+
+        <div className="mt-12 flex justify-center gap-6">
+
           <a
             href="https://www.instagram.com/_.hyfee._"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-300 hover:text-pink-500 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(236,72,153,0.7)]"
+            aria-label="Instagram"
+            className="flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 text-2xl transition-all duration-300 hover:-translate-y-1 hover:border-pink-500 hover:text-pink-500"
           >
             <FaInstagram />
           </a>
 
-          {/* WhatsApp */}
           <a
             href="https://wa.me/918943557986"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-300 hover:text-green-400 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(34,197,94,0.7)]"
+            aria-label="WhatsApp"
+            className="flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 text-2xl transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:text-green-400"
           >
             <FaWhatsapp />
           </a>
 
-          {/* Email */}
           <a
             href="mailto:hyfeetube@gmail.com"
-            className="transition duration-300 hover:text-purple-400 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(168,85,247,0.7)]"
+            aria-label="Email"
+            className="flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 text-2xl transition-all duration-300 hover:-translate-y-1 hover:border-purple-500 hover:text-purple-400"
           >
             <MdEmail />
           </a>
@@ -55,32 +68,44 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="w-20 h-[1px] bg-gray-800 mx-auto mb-6"></div>
 
-        {/* Legal Links (NEW - VERY IMPORTANT) */}
-        <div className="flex justify-center gap-6 text-xs text-gray-500 mb-6">
+        <div className="my-12 h-px w-full bg-zinc-800" />
 
-          <a href="/privacy-policy" className="hover:text-white transition">
+        {/* Links */}
+
+        <div className="flex flex-wrap justify-center gap-8 text-sm text-zinc-500">
+
+          <a
+            href="/privacy-policy"
+            className="transition hover:text-white"
+          >
             Privacy Policy
           </a>
 
-          <a href="/terms" className="hover:text-white transition">
+          <a
+            href="/terms"
+            className="transition hover:text-white"
+          >
             Terms
           </a>
 
-          <a href="/refund-policy" className="hover:text-white transition">
+          <a
+            href="/refund-policy"
+            className="transition hover:text-white"
+          >
             Refund Policy
           </a>
 
         </div>
 
         {/* Copyright */}
-        <p className="text-xs text-gray-500">
-          © 2021 – {new Date().getFullYear()} HYFEE VISUALS. All rights reserved.
+
+        <p className="mt-10 text-center text-sm text-zinc-500">
+          © 2021 – {new Date().getFullYear()} HYFEE VISUALS.
+          All Rights Reserved.
         </p>
 
       </div>
-
     </footer>
-  )
+  );
 }

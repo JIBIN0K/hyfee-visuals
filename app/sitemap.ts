@@ -3,27 +3,51 @@ import { prompts } from "@/content/prompts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://hyfee.vercel.app";
-
-  const promptPages = prompts.map((prompt) => ({
-    url: `${baseUrl}/prompts/${prompt.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  const lastModified = new Date();
 
   return [
+    // Home
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 1.0,
     },
+
+    // Prompt Library
     {
       url: `${baseUrl}/prompts`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
-    ...promptPages,
+
+    // Legal Pages
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/refund-policy`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+
+    // Prompt Pages
+    ...prompts.map((prompt) => ({
+      url: `${baseUrl}/prompts/${prompt.slug}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
   ];
 }

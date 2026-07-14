@@ -1,0 +1,280 @@
+/* ==========================================================
+   HYFEE VISUALS DESIGN SYSTEM
+   Version 1.0
+========================================================== */
+
+/* ==========================
+   Container
+========================== */
+
+.container {
+  width: min(1440px, 92%);
+  margin-inline: auto;
+}
+
+/* Large Desktop */
+
+@media (min-width: 1600px) {
+  .container {
+    width: min(1500px, 90%);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(100%, 94%);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+
+/* ==========================
+   Sections
+========================== */
+
+.section {
+  padding: 96px 0;
+}
+
+.section-sm {
+  padding: 72px 0;
+}
+
+.section-lg {
+  padding: 140px 0;
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-sm {
+    padding: 56px 0;
+  }
+
+  .section-lg {
+    padding: 96px 0;
+  }
+
+}
+
+/* ==========================
+   Section Header
+========================== */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.section-title {
+
+  font-size: clamp(2.2rem, 4vw, 4rem);
+
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  letter-spacing: -.03em;
+
+  color: white;
+
+}
+
+.section-subtitle {
+
+  max-width: 760px;
+
+  margin: 24px auto 0;
+
+  color: #9ca3af;
+
+  line-height: 1.9;
+
+  font-size: 1.1rem;
+
+}
+
+@media (max-width:768px){
+
+.section-header{
+margin-bottom:48px;
+}
+
+.section-subtitle{
+
+font-size:1rem;
+
+}
+
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card {
+
+  background: #111111;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  transition: .35s ease;
+
+}
+
+.card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: rgba(124,58,237,.5);
+
+  box-shadow: 0 30px 80px rgba(124,58,237,.18);
+
+}
+
+/* ==========================
+   Images
+========================== */
+
+.image-wrapper{
+
+overflow:hidden;
+
+border-radius:28px;
+
+}
+
+.image-wrapper img{
+
+transition:.7s ease;
+
+}
+
+.image-wrapper:hover img{
+
+transform:scale(1.06);
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn{
+
+transition:.35s ease;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ==========================
+   Glass
+========================== */
+
+.glass{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================
+   Gradient
+========================== */
+
+.gradient-border{
+
+position:relative;
+
+}
+
+.gradient-border::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+padding:1px;
+
+border-radius:inherit;
+
+background:linear-gradient(
+135deg,
+rgba(124,58,237,.5),
+rgba(255,255,255,.05)
+);
+
+-webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite:xor;
+
+mask-composite:exclude;
+
+pointer-events:none;
+
+}
+
+/* ==========================
+   Animations
+========================== */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .7s ease;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:none;
+
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#7c3aed;
+
+border-radius:999px;
+
+}

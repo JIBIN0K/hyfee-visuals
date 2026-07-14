@@ -1,182 +1,135 @@
 export default function Services() {
+  const services = [
+    {
+      title: "Photography",
+      description:
+        "Cinematic portraits, couples, events and premium visual storytelling.",
+      price: "From ₹2999",
+      button: "Book Shoot",
+      link: "https://wa.me/918943557986?text=Hi%20I%20want%20to%20book%20a%20photoshoot",
+      featured: true,
+    },
+    {
+      title: "Photo Editing",
+      description:
+        "Professional Lightroom editing with cinematic colors and premium tones.",
+      price: "From ₹199",
+      button: "Order Now",
+      link: "https://wa.me/918943557986?text=Hi%20I%20want%20photo%20editing%20service",
+    },
+    {
+      title: "Video Editing",
+      description:
+        "High-quality reels, cinematic edits and professional color grading.",
+      price: "From ₹399",
+      button: "Order Now",
+      link: "https://wa.me/918943557986?text=Hi%20I%20want%20video%20editing%20service",
+    },
+    {
+      title: "Lightroom Presets",
+      description:
+        "Signature HYFEE presets designed for creators and photographers.",
+      price: "From ₹249",
+      button: "View Presets",
+      link: "#presets",
+    },
+  ];
+
   return (
-    <section id="services" className="py-28 px-6 bg-neutral-950 text-white">
+    <section
+      id="services"
+      className="bg-black py-20 md:py-28"
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-      {/* Header */}
-      <div className="max-w-5xl mx-auto text-center mb-14">
+        {/* Heading */}
+        <div className="mx-auto max-w-3xl text-center">
 
-        <h2 className="text-5xl font-semibold mb-4 tracking-wide">
-          Services
-        </h2>
-
-        <p className="text-gray-400 mb-3">
-          Premium photography & editing crafted for cinematic visuals.
-        </p>
-
-        <p className="text-xs text-gray-500">
-          50+ clients • Fast delivery • High-end quality
-        </p>
-
-      </div>
-
-      {/* Grid */}
-      <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-
-        {/* 🔥 Photography */}
-        <div className="
-          bg-gradient-to-b from-purple-900/30 to-neutral-900
-          p-8 rounded-2xl flex flex-col text-center
-          border border-purple-500/40
-          shadow-xl shadow-purple-500/10
-          scale-105 relative
-          hover:-translate-y-2 transition-all duration-300
-        ">
-
-          {/* Badge */}
-          <span className="absolute top-4 right-4 text-[10px] bg-purple-600 px-3 py-1 rounded-full">
-            Most Popular
-          </span>
-
-          <h3 className="text-xl font-semibold mb-3">
-            Photography
-          </h3>
-
-          <p className="text-gray-400 mb-6 flex-grow">
-            Cinematic portraits & premium storytelling.
-          </p>
-
-          {/* Minimal Pricing */}
-          <div className="text-lg font-semibold text-white mb-2">
-            ₹2999+
+          <div className="inline-flex rounded-full border border-purple-500/30 bg-purple-500/10 px-5 py-2">
+            <span className="text-sm font-medium tracking-wide text-purple-300">
+              ✨ WHAT WE DO
+            </span>
           </div>
 
-          <p className="text-xs text-gray-500 mb-6">
-            Custom packages available
-          </p>
+          <h2 className="mt-6 text-4xl font-bold md:text-5xl">
+            Professional Creative Services
+          </h2>
 
-          <a
-            href="https://wa.me/918943557986?text=Hi%20I%20want%20to%20book%20a%20photoshoot"
-            target="_blank"
-            className="
-              px-6 py-3 rounded-xl
-              bg-gradient-to-r from-purple-600 to-purple-800
-              text-white font-semibold
-              shadow-lg shadow-purple-500/30
-              hover:scale-105
-              transition-all duration-300
-            "
-          >
-            Book Shoot
-          </a>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-400">
+            Premium photography, editing and creative resources
+            crafted to help creators stand out with cinematic visuals.
+          </p>
 
         </div>
 
-        {/* Photo Editing */}
-        <div className="
-          bg-neutral-900 p-8 rounded-2xl flex flex-col text-center
-          hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20
-          transition-all duration-300
-        ">
+        {/* Cards */}
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
 
-          <h3 className="text-xl font-semibold mb-3">
-            Photo Editing
-          </h3>
+          {services.map((service) => (
 
-          <p className="text-gray-400 mb-6 flex-grow">
-            Cinematic Lightroom edits with premium tones.
-          </p>
+            <div
+              key={service.title}
+              className={`group relative flex flex-col rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                service.featured
+                  ? "border-purple-500/50 bg-gradient-to-b from-purple-900/20 to-zinc-900 hover:shadow-purple-500/20"
+                  : "border-zinc-800 bg-zinc-900 hover:border-purple-500/40 hover:shadow-purple-500/10"
+              }`}
+            >
 
-          <div className="text-lg font-semibold text-white mb-6">
-            ₹199+
-          </div>
+              {service.featured && (
+                <span className="absolute right-5 top-5 rounded-full bg-purple-600 px-3 py-1 text-[11px] font-medium text-white">
+                  Most Popular
+                </span>
+              )}
 
-          <a
-            href="https://wa.me/918943557986?text=Hi%20I%20want%20photo%20editing%20service"
-            target="_blank"
-            className="
-              px-5 py-2 rounded-lg
-              border border-purple-500
-              text-purple-400
-              hover:bg-purple-600 hover:text-white
-              transition-all duration-300
-            "
-          >
-            Order
-          </a>
+              <h3 className="text-2xl font-bold">
+                {service.title}
+              </h3>
 
-        </div>
+              <p className="mt-4 flex-grow leading-7 text-zinc-400">
+                {service.description}
+              </p>
 
-        {/* Video Editing */}
-        <div className="
-          bg-neutral-900 p-8 rounded-2xl flex flex-col text-center
-          hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20
-          transition-all duration-300
-        ">
+              <div className="mt-8">
 
-          <h3 className="text-xl font-semibold mb-3">
-            Video Editing
-          </h3>
+                <p className="text-sm uppercase tracking-widest text-zinc-500">
+                  Starting Price
+                </p>
 
-          <p className="text-gray-400 mb-6 flex-grow">
-            Cinematic reels & pro color grading.
-          </p>
+                <p className="mt-2 text-3xl font-bold text-white">
+                  {service.price}
+                </p>
 
-          <div className="text-lg font-semibold text-white mb-6">
-            ₹399+
-          </div>
+              </div>
 
-          <a
-            href="https://wa.me/918943557986?text=Hi%20I%20want%20video%20editing%20service"
-            target="_blank"
-            className="
-              px-5 py-2 rounded-lg
-              border border-purple-500
-              text-purple-400
-              hover:bg-purple-600 hover:text-white
-              transition-all duration-300
-            "
-          >
-            Order
-          </a>
+              <a
+                href={service.link}
+                target={
+                  service.link.startsWith("http")
+                    ? "_blank"
+                    : undefined
+                }
+                rel={
+                  service.link.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
+                className={`mt-8 inline-flex items-center justify-center rounded-xl px-6 py-3 text-base font-semibold transition-all duration-300 ${
+                  service.featured
+                    ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white hover:-translate-y-1"
+                    : "border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white"
+                }`}
+              >
+                {service.button}
+              </a>
 
-        </div>
+            </div>
 
-        {/* Presets */}
-        <div className="
-          bg-neutral-900 p-8 rounded-2xl flex flex-col text-center
-          hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20
-          transition-all duration-300
-        ">
-
-          <h3 className="text-xl font-semibold mb-3">
-            Presets
-          </h3>
-
-          <p className="text-gray-400 mb-6 flex-grow">
-            Signature Lightroom presets for creators.
-          </p>
-
-          <div className="text-lg font-semibold text-white mb-6">
-            ₹249+
-          </div>
-
-          <a
-            href="#presets"
-            className="
-              px-5 py-2 rounded-lg
-              border border-purple-500
-              text-purple-400
-              hover:bg-purple-600 hover:text-white
-              transition-all duration-300
-            "
-          >
-            View
-          </a>
+          ))}
 
         </div>
 
       </div>
-
     </section>
-  )
+  );
 }

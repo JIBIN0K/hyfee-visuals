@@ -1,30 +1,45 @@
-export default function PortraitPreset() {
+"use client";
+
+import Link from "next/link";
+import Container from "@/components/common/Container";
+import Badge from "@/components/common/Badge";
+import Button from "@/components/common/Button";
+
+export default function CinematicComingSoon() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6">
+    <main className="min-h-screen bg-black text-white flex items-center">
+      <Container>
+        <div className="mx-auto max-w-3xl text-center">
 
-      <h1 className="text-4xl font-bold mb-6">
-        Portrait Preset Pack
-      </h1>
+          <Badge>COMING SOON</Badge>
 
-      <img
-        src="/photo4.jpg"
-        alt="Portrait preset"
-        className="w-full max-w-xl rounded-xl mb-6"
-      />
+          <h1 className="mt-6 text-5xl md:text-6xl font-bold">
+            Portrait Preset Pack
+          </h1>
 
-      <p className="text-gray-400 max-w-xl text-center mb-6">
-        Professional portrait tones that enhance skin colors and create a
-        soft cinematic look for portrait photography.
-      </p>
+          <p className="mt-6 text-lg text-gray-400 leading-8">
+            We're currently crafting this premium Lightroom preset pack.
+            It will be released soon with professionally tuned cinematic
+            colour grading for creators.
+          </p>
 
-      <div className="text-2xl font-semibold mb-6">
-        ₹299
-      </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
 
-      <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-        Buy Now
-      </button>
+            <Button href="/presets/exclusive">
+              View Exclusive Pack
+            </Button>
 
-    </div>
-  )
+            <Link
+              href="/"
+              className="rounded-xl border border-white/10 px-8 py-4 hover:border-purple-500 transition"
+            >
+              Back Home
+            </Link>
+
+          </div>
+
+        </div>
+      </Container>
+    </main>
+  );
 }

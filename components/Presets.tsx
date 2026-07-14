@@ -1,7 +1,6 @@
-import PresetCard from "./PresetCard"
+import PresetCard from "./PresetCard";
 
 export default function Presets() {
-
   const presets = [
     {
       name: "HYFEE Exclusive Pack",
@@ -48,41 +47,59 @@ export default function Presets() {
       featured: false,
       subtitle: "Premium Pack",
     },
-  ]
+  ];
 
   return (
-    <section id="presets" className="bg-black py-28 px-6">
+    <section
+      id="presets"
+      className="bg-black py-20 md:py-28"
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-      <div className="text-center mb-16">
+        {/* Heading */}
 
-        <h2 className="text-5xl font-semibold text-white tracking-wide">
-          Lightroom Preset Packs
-        </h2>
+        <div className="mx-auto mb-16 max-w-3xl text-center">
 
-        <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-          Professional cinematic Lightroom presets designed for photographers,
-          creators and mobile editors. Transform your photos instantly.
-        </p>
+          <div className="inline-flex rounded-full border border-purple-500/30 bg-purple-500/10 px-5 py-2">
+
+            <span className="text-sm font-medium tracking-wide text-purple-300">
+              🎨 LIGHTROOM PRESETS
+            </span>
+
+          </div>
+
+          <h2 className="mt-6 text-4xl font-bold md:text-5xl">
+            Professional Preset Collection
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-400 md:text-lg">
+            Premium Lightroom presets crafted for photographers,
+            creators and mobile editors. Achieve a cinematic look
+            in just one tap.
+          </p>
+
+        </div>
+
+        {/* Grid */}
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+
+          {presets.map((preset) => (
+            <PresetCard
+              key={preset.slug}
+              name={preset.name}
+              price={preset.price}
+              image={preset.image}
+              slug={preset.slug}
+              badge={preset.badge}
+              featured={preset.featured}
+              subtitle={preset.subtitle}
+            />
+          ))}
+
+        </div>
 
       </div>
-
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
-
-        {presets.map((preset, index) => (
-          <PresetCard
-            key={index}
-            name={preset.name}
-            price={preset.price}
-            image={preset.image}
-            slug={preset.slug}
-            badge={preset.badge}
-            featured={preset.featured}
-            subtitle={preset.subtitle}
-          />
-        ))}
-
-      </div>
-
     </section>
-  )
+  );
 }

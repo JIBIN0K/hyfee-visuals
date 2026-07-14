@@ -1,32 +1,31 @@
-import Navbar from "@/components/Navbar"
-import Hero from "@/components/Hero"
-import Presets from "@/components/Presets"
-import Portfolio from "@/components/Portfolio"
-import ExclusiveCard from "@/components/ExclusiveCard"
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
-import Services from "@/components/Services"
-import CTA from "@/components/CTA"
-import WhatsAppButton from "@/components/WhatsAppButton"
-import FeaturedPrompts from "@/components/FeaturedPrompts";
+import Navbar from "@/components/landing/Navbar";
+
+import Hero from "@/components/landing/hero/Hero";
+import Services from "@/components/landing/services/Services";
+import FeaturedPreset from "@/components/landing/presets/FeaturedPreset";
+import Portfolio from "@/components/landing/portfolio/Portfolio";
+import PromptLibrary from "@/components/landing/prompts/PromptLibrary";
+import CTA from "@/components/landing/cta/CTA";
+import Contact from "@/components/landing/contact/Contact";
+import Footer from "@/components/landing/footer/Footer";
+
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main className="bg-black text-white">
 
       <Navbar />
 
       <Hero />
 
-      <FeaturedPrompts />
-
       <Services />
 
-      <ExclusiveCard />
-
-      <Presets />
+      <FeaturedPreset />
 
       <Portfolio />
+
+      <PromptLibrary />
 
       <CTA />
 
@@ -34,9 +33,8 @@ export default function Home() {
 
       <Footer />
 
-      {/* Floating WhatsApp Button */}
       <WhatsAppButton />
 
     </main>
-  )
+  );
 }

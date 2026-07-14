@@ -12,19 +12,29 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Discover premium AI prompts, Lightroom presets, cinematic photo editing, and creative visual resources by HYFEE VISUALS.",
+    "Discover premium AI prompts, Lightroom presets, cinematic photography, professional editing, and creative visual resources by HYFEE VISUALS.",
+
+  applicationName: "HYFEE VISUALS",
 
   keywords: [
+    "HYFEE",
     "HYFEE VISUALS",
     "AI prompts",
+    "ChatGPT prompts",
+    "GPT Image prompts",
+    "Gemini prompts",
+    "Flux prompts",
     "Lightroom presets",
-    "Photo editing",
     "Photography",
-    "Cinematic editing",
+    "Cinematic photography",
+    "Professional photo editing",
+    "Photo editing",
+    "Visual storytelling",
     "Minecraft prompt",
     "Lumina prompt",
     "Fog prompt",
     "Monsoon prompt",
+    "Rest and Gold prompt",
   ],
 
   authors: [
@@ -33,12 +43,33 @@ export const metadata: Metadata = {
     },
   ],
 
+  creator: "HYFEE VISUALS",
+
+  publisher: "HYFEE VISUALS",
+
+  category: "Photography",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
   openGraph: {
-    title: "HYFEE VISUALS",
-    description:
-      "Premium AI prompts, Lightroom presets and cinematic editing resources.",
-    url: "/",
+    type: "website",
+    locale: "en_US",
+    url: "https://hyfee.vercel.app",
     siteName: "HYFEE VISUALS",
+
+    title: "HYFEE VISUALS",
+
+    description:
+      "Premium AI prompts, Lightroom presets and cinematic photography resources.",
+
     images: [
       {
         url: "/share.jpg",
@@ -47,29 +78,36 @@ export const metadata: Metadata = {
         alt: "HYFEE VISUALS",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "HYFEE VISUALS",
-    description:
-      "Premium AI prompts, Lightroom presets and cinematic editing resources.",
-    images: ["/share.jpg"],
-  },
 
-  alternates: {
-    canonical: "/",
+    title: "HYFEE VISUALS",
+
+    description:
+      "Premium AI prompts, Lightroom presets and cinematic photography resources.",
+
+    images: ["/share.jpg"],
   },
 
   robots: {
     index: true,
     follow: true,
+
+    nocache: false,
+
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
     },
+  },
+
+  verification: {
+    google: "", // Add Google Search Console verification code here later
   },
 };
 
@@ -80,7 +118,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-black text-white antialiased">
         {children}
         <Analytics />
       </body>

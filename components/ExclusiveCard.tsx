@@ -1,36 +1,86 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function ExclusiveCard() {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-      <div className="max-w-5xl mx-auto bg-gradient-to-r from-purple-900 to-black rounded-3xl p-12 text-center shadow-xl">
+        <div className="overflow-hidden rounded-3xl border border-purple-500/20 bg-gradient-to-br from-zinc-900 via-purple-950/30 to-black p-8 md:p-14 shadow-2xl shadow-purple-500/10">
 
-        <div className="text-sm bg-yellow-400 text-black inline-block px-4 py-1 rounded-full mb-4 font-semibold">
-          🔥 LIMITED LAUNCH OFFER
+          <div className="mx-auto max-w-3xl text-center">
+
+            {/* Badge */}
+
+            <div className="inline-flex rounded-full border border-yellow-500/40 bg-yellow-500/10 px-5 py-2">
+
+              <span className="text-sm font-semibold tracking-wide text-yellow-300">
+                🔥 LIMITED LAUNCH OFFER
+              </span>
+
+            </div>
+
+            {/* Heading */}
+
+            <h2 className="mt-6 text-4xl font-bold leading-tight md:text-5xl">
+              HYFEE Exclusive Preset Pack
+            </h2>
+
+            {/* Description */}
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-400 md:text-lg">
+              Get our signature collection of professionally crafted Lightroom
+              Mobile presets designed to give your photos a cinematic look in
+              just one tap.
+            </p>
+
+            {/* Features */}
+
+            <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm text-zinc-400">
+
+              <span>🎨 5 Premium Presets</span>
+
+              <span>•</span>
+
+              <span>⚡ Instant Download</span>
+
+              <span>•</span>
+
+              <span>📱 Mobile Friendly</span>
+
+            </div>
+
+            {/* Price */}
+
+            <div className="mt-10">
+
+              <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
+                Launch Price
+              </p>
+
+              <h3 className="mt-3 text-5xl font-bold text-white">
+                ₹249
+              </h3>
+
+            </div>
+
+            {/* CTA */}
+
+            <div className="mt-10">
+
+              <Link
+                href="/presets/exclusive"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-purple-800 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-purple-500/50"
+              >
+                Preview Presets
+              </Link>
+
+            </div>
+
+          </div>
+
         </div>
-
-        <h2 className="text-4xl font-bold mb-4">
-          HYFEE Exclusive Preset Pack
-        </h2>
-
-        <p className="text-gray-300 mb-6">
-          5 Premium Lightroom Mobile Presets
-        </p>
-
-        <div className="text-3xl font-bold mb-8">
-          ₹249
-        </div>
-
-        <Link
-          href="/presets/exclusive"
-          className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200"
-        >
-          Preview Presets
-        </Link>
 
       </div>
-
     </section>
-  )
+  );
 }
