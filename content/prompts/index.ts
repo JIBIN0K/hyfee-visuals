@@ -6,6 +6,7 @@ import monsoonPrompt from "./monsoon-prompt";
 import fogPrompt from "./fog-prompt";
 import minecraftPrompt from "./minecraft-prompt";
 import restAndGoldPrompt from "./rest-and-gold-prompt";
+import animePrompt from "./anime-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -16,6 +17,7 @@ export const prompts = [
     fogPrompt,
     minecraftPrompt,
     restAndGoldPrompt,
+    animePrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
