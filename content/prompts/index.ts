@@ -10,6 +10,8 @@ import animePrompt from "./anime-prompt";
 import goldenMistPrompt from "./golden-mist-prompt";
 import moonlitFogPrompt from "./moonlit-fog-prompt";
 import forestWhisperPrompt from "./forest-whisper-prompt";
+import monsoonForestGradePrompt from "./monsoon-forest-grade-prompt";
+import comicPrompt from "./comic-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -24,6 +26,8 @@ export const prompts = [
     goldenMistPrompt,
     moonlitFogPrompt,
     forestWhisperPrompt,
+    monsoonForestGradePrompt,
+    comicPrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
