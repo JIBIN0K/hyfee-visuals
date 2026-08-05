@@ -6,13 +6,13 @@ import Link from "next/link";
 import Container from "@/components/common/Container";
 
 const CARDS = [
-  { src: "/photo1.jpg", rotate: -20, y: 44 },
-  { src: "/photo2.jpg", rotate: -13, y: 20 },
-  { src: "/portrait.jpg", rotate: -6, y: 6 },
-  { src: "/hero.jpg", rotate: 0, y: 0 },
-  { src: "/cinematic.jpg", rotate: 6, y: 6 },
-  { src: "/moody.jpg", rotate: 13, y: 20 },
-  { src: "/photo5.jpg", rotate: 20, y: 44 },
+  { src: "/hero 1.jpg", rotate: -20, y: 44 },
+  { src: "/hero 2.jpg", rotate: -13, y: 20 },
+  { src: "/hero 3.jpg", rotate: -6, y: 6 },
+  { src: "/hero 4.jpg", rotate: 0, y: 0 },
+  { src: "/hero 5.jpg", rotate: 6, y: 6 },
+  { src: "/hero 6.jpg", rotate: 13, y: 20 },
+  { src: "/hero 7.jpg", rotate: 20, y: 44 },
 ];
 
 function ArrowIcon() {

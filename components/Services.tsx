@@ -6,7 +6,7 @@ export default function Services() {
         "Cinematic portraits, couples, events and premium visual storytelling.",
       price: "From ₹2999",
       button: "Book Shoot",
-      link: "https://wa.me/918943557986?text=Hi%20I%20want%20to%20book%20a%20photoshoot",
+      link: "https://wa.me/918943557986?text=Hi%20HYFEE!%20I%20would%20like%20to%20book%20a%20photoshoot.",
       featured: true,
     },
     {
@@ -15,7 +15,7 @@ export default function Services() {
         "Professional Lightroom editing with cinematic colors and premium tones.",
       price: "From ₹199",
       button: "Order Now",
-      link: "https://wa.me/918943557986?text=Hi%20I%20want%20photo%20editing%20service",
+      link: "https://wa.me/918943557986?text=Hi%20HYFEE!%20I%20would%20like%20to%20get%20some%20photos%20edited.",
     },
     {
       title: "Video Editing",
@@ -23,7 +23,7 @@ export default function Services() {
         "High-quality reels, cinematic edits and professional color grading.",
       price: "From ₹399",
       button: "Order Now",
-      link: "https://wa.me/918943557986?text=Hi%20I%20want%20video%20editing%20service",
+      link: "https://wa.me/918943557986?text=Hi%20HYFEE!%20I%20would%20like%20to%20get%20a%20video%20edited.",
     },
     {
       title: "Lightroom Presets",
