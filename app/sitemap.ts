@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { prompts } from "@/content/prompts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://hyfee.vercel.app";
+  const baseUrl = "https://hyfeevisuals.com";
   const lastModified = new Date();
 
   return [

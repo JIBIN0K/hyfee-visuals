@@ -21,7 +21,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hyfee.vercel.app"),
+  metadataBase: new URL("https://hyfeevisuals.com"),
 
   title: {
     default: "HYFEE VISUALS",
