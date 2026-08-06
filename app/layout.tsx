@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   category: "Photography",
 
   alternates: {
-    canonical: "/",
+    canonical: "https://hyfeevisuals.com",
   },
 
   icons: {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hyfee.vercel.app",
+    url: "https://hyfeevisuals.com",
     siteName: "HYFEE VISUALS",
 
     title: "HYFEE VISUALS",
@@ -128,11 +128,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <body className="bg-black text-white antialiased">
