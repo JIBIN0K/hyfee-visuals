@@ -13,6 +13,7 @@ import forestWhisperPrompt from "./forest-whisper-prompt";
 import monsoonForestGradePrompt from "./monsoon-forest-grade-prompt";
 import comicPrompt from "./comic-prompt";
 import lostPrompt from "./lost-prompt";
+import abandonedPrompt from "./abandoned-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -30,6 +31,7 @@ export const prompts = [
     monsoonForestGradePrompt,
     comicPrompt,
     lostPrompt,
+    abandonedPrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
