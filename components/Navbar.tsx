@@ -9,9 +9,8 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-      <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6 lg:px-8">
-
+    <header className="relative z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-xl">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
         {/* Logo */}
         <Link
           href="/"
@@ -23,7 +22,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden items-center gap-8 lg:flex">
-
           <Link
             href="/"
             className="text-sm text-zinc-300 transition hover:text-white"
@@ -36,6 +34,14 @@ export default function Navbar() {
             className="rounded-full border border-green-500/40 bg-green-500/10 px-5 py-2 text-sm font-medium text-green-300 transition hover:border-green-500 hover:bg-green-600 hover:text-white"
           >
             AI Prompts
+          </Link>
+
+          {/* Store */}
+          <Link
+            href="/store"
+            className="text-sm font-medium text-zinc-300 transition hover:text-green-300"
+          >
+            Store
           </Link>
 
           <a
@@ -58,7 +64,6 @@ export default function Navbar() {
           >
             Contact
           </a>
-
         </div>
 
         {/* Mobile Button */}
@@ -66,6 +71,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="rounded-lg p-2 transition hover:bg-white/10 lg:hidden"
           aria-label="Toggle navigation"
+          aria-expanded={isOpen}
         >
           <svg
             className="h-7 w-7"
@@ -89,22 +95,21 @@ export default function Navbar() {
             )}
           </svg>
         </button>
-
       </nav>
 
       {/* Mobile Menu */}
-
       <div
         className={`overflow-hidden transition-all duration-300 lg:hidden ${
-          isOpen ? "max-h-96 border-t border-white/10" : "max-h-0"
+          isOpen
+            ? "max-h-[500px] border-t border-white/10"
+            : "max-h-0"
         }`}
       >
         <div className="space-y-2 bg-black px-6 py-6">
-
           <Link
             href="/"
             onClick={closeMenu}
-            className="block rounded-lg px-4 py-3 hover:bg-white/10"
+            className="block rounded-lg px-4 py-3 text-zinc-200 transition hover:bg-white/10 hover:text-white"
           >
             Home
           </Link>
@@ -112,15 +117,24 @@ export default function Navbar() {
           <Link
             href="/prompts"
             onClick={closeMenu}
-            className="block rounded-lg bg-green-600 px-4 py-3 text-white"
+            className="block rounded-lg bg-green-600 px-4 py-3 text-white transition hover:bg-green-500"
           >
             AI Prompts
+          </Link>
+
+          {/* Store */}
+          <Link
+            href="/store"
+            onClick={closeMenu}
+            className="block rounded-lg px-4 py-3 text-zinc-200 transition hover:bg-green-500/10 hover:text-green-300"
+          >
+            Store
           </Link>
 
           <a
             href="#presets"
             onClick={closeMenu}
-            className="block rounded-lg px-4 py-3 hover:bg-white/10"
+            className="block rounded-lg px-4 py-3 text-zinc-200 transition hover:bg-white/10 hover:text-white"
           >
             Presets
           </a>
@@ -128,7 +142,7 @@ export default function Navbar() {
           <a
             href="#portfolio"
             onClick={closeMenu}
-            className="block rounded-lg px-4 py-3 hover:bg-white/10"
+            className="block rounded-lg px-4 py-3 text-zinc-200 transition hover:bg-white/10 hover:text-white"
           >
             Portfolio
           </a>
@@ -136,14 +150,12 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={closeMenu}
-            className="block rounded-lg px-4 py-3 hover:bg-white/10"
+            className="block rounded-lg px-4 py-3 text-zinc-200 transition hover:bg-white/10 hover:text-white"
           >
             Contact
           </a>
-
         </div>
       </div>
-
     </header>
   );
 }
