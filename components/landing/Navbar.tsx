@@ -33,6 +33,7 @@ export default function Navbar() {
     { label: "Portfolio", href: "/#portfolio" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/#contact" },
+    { label: "Store", href: "/store" },
   ];
 
   return (

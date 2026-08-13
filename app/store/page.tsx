@@ -2,29 +2,6 @@ import Link from "next/link";
 import StoreProducts from "@/components/store/StoreProducts";
 import { products } from "@/content/products";
 
-const categories = [
-  {
-    name: "Cameras",
-    description: "Cameras I recommend for creators.",
-    icon: "📷",
-  },
-  {
-    name: "Lenses",
-    description: "Lenses for portraits, events and cinematic work.",
-    icon: "🔭",
-  },
-  {
-    name: "Lighting",
-    description: "Lighting tools for better visual storytelling.",
-    icon: "💡",
-  },
-  {
-    name: "Creator Gear",
-    description: "Useful accessories for photographers and creators.",
-    icon: "🎒",
-  },
-];
-
 export default function StorePage() {
   return (
     <main className="min-h-screen bg-[#09090b] text-white">
@@ -51,8 +28,8 @@ export default function StorePage() {
 
           {/* Description */}
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-            A curated collection of cameras, lenses, lighting and creator
-            gear that I recommend for photographers and visual creators.
+            A curated collection of cameras, lenses and creator gear that I
+            recommend for photographers and visual creators.
           </p>
 
           {/* Affiliate Disclosure */}
@@ -62,60 +39,12 @@ export default function StorePage() {
           </p>
 
           {/* Scroll CTA */}
-          <Link
+          <a
             href="#products"
             className="btn-secondary btn mt-8"
           >
-            Explore the Store →
-          </Link>
-        </div>
-      </section>
-
-      {/* =====================================================
-          CATEGORIES
-      ===================================================== */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-badge">
-              Explore
-            </div>
-
-            <h2 className="section-title mt-6">
-              Find what you need
-            </h2>
-
-            <p className="section-subtitle">
-              Explore carefully selected gear and tools for photography,
-              editing and content creation.
-            </p>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {categories.map((category) => (
-              <Link
-                key={category.name}
-                href="#products"
-                className="card group p-6"
-              >
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-2xl transition duration-300 group-hover:border-green-500/30 group-hover:bg-green-500/10">
-                  {category.icon}
-                </div>
-
-                <h3 className="text-xl font-semibold transition group-hover:text-green-400">
-                  {category.name}
-                </h3>
-
-                <p className="mt-3 text-sm leading-7 text-zinc-500">
-                  {category.description}
-                </p>
-
-                <div className="mt-6 text-sm font-medium text-green-400">
-                  Explore →
-                </div>
-              </Link>
-            ))}
-          </div>
+            View HYFEE Picks ↓
+          </a>
         </div>
       </section>
 
@@ -124,9 +53,11 @@ export default function StorePage() {
       ===================================================== */}
       <section
         id="products"
-        className="section scroll-mt-24 border-t border-white/5"
+        className="section border-t border-white/5"
+        style={{ scrollMarginTop: "120px" }}
       >
         <div className="container">
+          {/* Section Header */}
           <div className="section-header">
             <div className="section-badge">
               HYFEE Picks
@@ -137,11 +68,12 @@ export default function StorePage() {
             </h2>
 
             <p className="section-subtitle">
-              Products selected with real-world photography and creator
-              workflows in mind.
+              A small collection of products selected with real-world
+              photography and creator workflows in mind.
             </p>
           </div>
 
+          {/* Products */}
           <StoreProducts products={products} />
         </div>
       </section>
