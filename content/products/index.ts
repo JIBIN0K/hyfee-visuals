@@ -3,7 +3,10 @@ export type ProductCategory =
   | "Lenses"
   | "Lighting"
   | "Creator Gear"
-  | "Fashion";
+  | "Fashion"
+  | "Jewellery"
+  | "Accessories"
+  | "Shoot Essentials";
 
 export type Product = {
   id: string;
@@ -641,7 +644,6 @@ export const products: Product[] = [
     featured: false,
     badge: "Shoot Essential",
   },
-
 ];
 
 /* =====================================================
@@ -655,4 +657,7 @@ export const categories: ProductCategory[] = [
   "Lighting",
   "Creator Gear",
   "Fashion",
+  "Jewellery",
+  "Accessories",
+  "Shoot Essentials",
 ];
