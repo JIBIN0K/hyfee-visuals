@@ -412,7 +412,7 @@ export const products: Product[] = [
     id: "hiffin-camera-cleaning-kit",
     name: "HIFFIN Professional Camera Cleaning Kit",
     brand: "HIFFIN",
-    category: "Creator Gear",
+    category: "Shoot Essentials",
     subcategory: "Camera Care",
     description:
       "A practical camera and lens cleaning kit for keeping your photography equipment clean and ready for the next shoot.",
@@ -429,7 +429,7 @@ export const products: Product[] = [
     id: "digitek-5-in-1-reflector-47",
     name: "Digitek 5-in-1 Photography Reflector",
     brand: "Digitek",
-    category: "Creator Gear",
+    category: "Shoot Essentials",
     subcategory: "Reflectors",
     description:
       "A 47-inch collapsible 5-in-1 reflector for controlling and shaping natural or artificial light during portraits, outdoor shoots and photography sessions.",
@@ -464,7 +464,7 @@ export const products: Product[] = [
     id: "camera-sling-bag",
     name: "Water-Resistant Camera Sling Bag",
     brand: "Camera Gear",
-    category: "Creator Gear",
+    category: "Accessories",
     subcategory: "Camera Bags",
     description:
       "A compact water-resistant camera sling designed to keep your camera and essential accessories protected while shooting on the go.",
@@ -481,7 +481,7 @@ export const products: Product[] = [
     id: "sandisk-extreme-256gb-microsd",
     name: "SanDisk Extreme 256GB microSDXC",
     brand: "SanDisk",
-    category: "Creator Gear",
+    category: "Accessories",
     subcategory: "Storage",
     description:
       "A high-performance 256GB microSDXC card for compatible cameras, action cameras, smartphones and other creator devices.",
@@ -516,7 +516,7 @@ export const products: Product[] = [
     id: "amazon-basics-8-in-1-usb-c-hub",
     name: "Amazon Basics 8-in-1 USB-C Hub",
     brand: "Amazon Basics",
-    category: "Creator Gear",
+    category: "Accessories",
     subcategory: "Storage & Connectivity",
     description:
       "An 8-in-1 USB-C hub with SD and TF card readers, USB 3.0, HDMI, USB-C Power Delivery and Ethernet. A practical solution for transferring photos and videos from memory cards to USB-C laptops and other compatible devices.",
@@ -563,7 +563,7 @@ export const products: Product[] = [
     id: "sandisk-256gb-usb-flash-drive",
     name: "SanDisk 256GB USB Flash Drive",
     brand: "SanDisk",
-    category: "Creator Gear",
+    category: "Accessories",
     subcategory: "Storage",
     description:
       "A compact 256GB USB flash drive for convenient photo, video and file storage and transfer between compatible devices.",
@@ -597,7 +597,7 @@ export const products: Product[] = [
     id: "sandisk-extreme-256gb-sd",
     name: "SanDisk Extreme 256GB SDXC",
     brand: "SanDisk",
-    category: "Creator Gear",
+    category: "Accessories",
     subcategory: "Memory Cards",
     description:
       "A high-performance 256GB SDXC memory card designed for compatible mirrorless cameras, DSLRs and other devices that use full-size SD cards.",
@@ -632,7 +632,7 @@ export const products: Product[] = [
     id: "flying-collection-camera-rain-cover",
     name: "Professional Camera Rain Cover",
     brand: "FLYING COLLECTION",
-    category: "Creator Gear",
+    category: "Shoot Essentials",
     subcategory: "Camera Protection",
     description:
       "A practical rain cover designed to help protect compatible DSLR and mirrorless cameras during outdoor photography and video shoots in wet weather.",
@@ -656,8 +656,6 @@ export const categories: ProductCategory[] = [
   "Lenses",
   "Lighting",
   "Creator Gear",
-  "Fashion",
-  "Jewellery",
   "Accessories",
   "Shoot Essentials",
 ];
