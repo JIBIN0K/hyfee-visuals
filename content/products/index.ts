@@ -6,7 +6,8 @@ export type ProductCategory =
   | "Fashion"
   | "Jewellery"
   | "Accessories"
-  | "Shoot Essentials";
+  | "Shoot Essentials"
+  | "Decor";
 
 export type Product = {
   id: string;
@@ -644,6 +645,45 @@ export const products: Product[] = [
     featured: false,
     badge: "Shoot Essential",
   },
+
+  /* =====================================================
+   DECOR
+===================================================== */
+
+  {
+    id: "meesho-aesthetic-car-wall-collage",
+    name: "Aesthetic Car Wall Collage Kit",
+    brand: "Meesho",
+    category: "Decor",
+    subcategory: "Wall Decor",
+    description:
+      "A 24-piece car aesthetic poster set for room styling, creative backgrounds and photography-friendly decor.",
+    price: "₹59",
+    image: "/images/store/meesho-car-wall-collage.jpg",
+    affiliateUrl:
+      "https://www.meesho.com/af_invite/521184327:instagram_stories:8221086?p_id=527008241&ext_id=8prm5t&utm_source=instagram_stories",
+    merchant: "Meesho",
+    featured: false,
+    badge: "Budget Pick",
+    specifications: [
+      {
+        label: "Quantity",
+        value: "24 pieces",
+      },
+      {
+        label: "Size",
+        value: "4 × 6 inches",
+      },
+      {
+        label: "Type",
+        value: "Unframed",
+      },
+      {
+        label: "Use",
+        value: "Room decoration & creative backgrounds",
+      },
+    ],
+  },
 ];
 
 /* =====================================================
@@ -658,4 +698,5 @@ export const categories: ProductCategory[] = [
   "Creator Gear",
   "Accessories",
   "Shoot Essentials",
+  "Decor",
 ];
