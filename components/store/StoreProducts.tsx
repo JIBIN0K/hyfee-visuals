@@ -19,6 +19,7 @@ const filters: Filter[] = [
   "Jewellery",
   "Accessories",
   "Shoot Essentials",
+  "Decor",
   "Featured",
 ];
 
