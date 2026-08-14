@@ -222,6 +222,53 @@ export const products: Product[] = [
   },
 
   {
+    id: "sony-fe-85mm-f1-4-gm",
+    name: "Sony FE 85mm F1.4 GM",
+    brand: "Sony",
+    category: "Lenses",
+    subcategory: "Portrait Lenses",
+    description:
+      "A premium 85mm f/1.4 G Master portrait lens for Sony E-mount cameras, designed for exceptional subject separation, sharpness and smooth background bokeh. A strong choice for fashion, portraits, weddings and professional people photography.",
+    price: "Check latest price",
+    image: "/images/store/sony-fe-85mm-f1-4-gm.jpg",
+    affiliateUrl:
+      "https://www.amazon.in/Sony-SEL85F14GM-Mount-Frame-Master/dp/B01BUAVL7E?linkCode=sl2&tag=hyfeevisuals-21&linkId=018f247d433cbf818d1063c2a7c00fe7",
+    merchant: "Amazon",
+    featured: true,
+    badge: "HYFEE Pick",
+    specifications: [
+      {
+        label: "Focal Length",
+        value: "85mm",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "f/1.4",
+      },
+      {
+        label: "Mount",
+        value: "Sony E-mount",
+      },
+      {
+        label: "Format",
+        value: "35mm Full-Frame",
+      },
+      {
+        label: "Aperture Blades",
+        value: "11",
+      },
+      {
+        label: "Filter Diameter",
+        value: "77mm",
+      },
+      {
+        label: "Weight",
+        value: "820g",
+      },
+    ],
+  },
+
+  {
     id: "sigma-35mm-f1-4-dg-hsm-art",
     name: "Sigma 35mm F1.4 DG HSM Art",
     brand: "Sigma",
