@@ -18,6 +18,7 @@ import velvetSkyPrompt from "./velvet-sky-prompt";
 import vintagePrompt from "./vintage-prompt";
 import deepGreenPrompt from "./deepgreen-prompt";
 import etherealPrompt from "./ethereal-prompt";
+import authenticFilmPrompt from "./authentic-film-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -40,6 +41,7 @@ export const prompts = [
     vintagePrompt,
     deepGreenPrompt,
     etherealPrompt,
+    authenticFilmPrompt
 ];
 
 export function getPromptBySlug(slug: string) {
