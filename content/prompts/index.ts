@@ -20,6 +20,7 @@ import deepGreenPrompt from "./deepgreen-prompt";
 import etherealPrompt from "./ethereal-prompt";
 import authenticFilmPrompt from "./authentic-film-prompt";
 import dreamyPrompt from "./dreamy-prompt";
+import honeylightPrompt from "./honeylight-prompt";
 
 export const prompts = [
     fluidPixelStretch,
@@ -44,6 +45,7 @@ export const prompts = [
     etherealPrompt,
     authenticFilmPrompt,
     dreamyPrompt,
+    honeylightPrompt,
 ];
 
 export function getPromptBySlug(slug: string) {
