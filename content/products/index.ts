@@ -418,6 +418,49 @@ export const products: Product[] = [
   },
 
   {
+    id: "zebronics-duke-plus-wireless-headphones",
+    name: "ZEBRONICS Duke Plus Wireless Headphones",
+    brand: "ZEBRONICS",
+    category: "Creator Gear",
+    subcategory: "Headphones",
+    description:
+      "Wireless over-ear headphones with ANC, ENC, low-latency gaming mode and up to 70 hours of playback, making them a practical choice for editing, music, gaming and everyday creator use.",
+    price: "₹1,499",
+    image: "/images/store/zebronics-duke-plus.jpg",
+    affiliateUrl:
+      "https://www.amazon.in/dp/B0D573NP19/ref=cm_sw_r_as_gl_apa_gl_i_F7A702ZZTTEBEMCF4C3X?linkCode=ml1&tag=hyfeevisuals-21&linkId=79776cd1c6458fdbbed147b91049c927&ascsubtag=srctok-1bcb561386e44d28&btn_type=ss&btn_ref=srctok-1bcb561386e44d28&th=1",
+    merchant: "Amazon",
+    featured: false,
+    badge: "Creator Pick",
+    specifications: [
+      {
+        label: "Driver",
+        value: "40mm",
+      },
+      {
+        label: "Playback",
+        value: "Up to 70 hours",
+      },
+      {
+        label: "Noise Control",
+        value: "ANC + ENC",
+      },
+      {
+        label: "Connectivity",
+        value: "Bluetooth + AUX",
+      },
+      {
+        label: "Gaming",
+        value: "Low-latency gaming mode",
+      },
+      {
+        label: "Weight",
+        value: "190g",
+      },
+    ],
+  },
+
+  {
     id: "syvo-wt-3130-tripod",
     name: "Syvo WT-3130 Aluminum Tripod",
     brand: "Syvo",
@@ -811,43 +854,43 @@ export const products: Product[] = [
   },
 
   {
-  id: "meesho-neymar-poster-set-36",
-  name: "Neymar Poster Set – 36 A6 Posters",
-  brand: "Meesho",
-  category: "Decor",
-  subcategory: "Wall Decor",
-  description:
-    "A set of 36 Neymar football posters in A6 size, perfect for wall collages, bedroom styling, football-themed rooms and creative backgrounds.",
-  price: "₹258",
-  image: "/images/store/meesho-neymar-poster-set-36.jpg",
-  affiliateUrl:
-    "https://www.meesho.com/af_invite/521184327:instagram_stories:9714842?p_id=745352740&ext_id=cbrhus&utm_source=instagram_stories",
-  merchant: "Meesho",
-  featured: false,
-  badge: "Budget Pick",
-  specifications: [
-    {
-      label: "Quantity",
-      value: "36 posters",
-    },
-    {
-      label: "Size",
-      value: "A6",
-    },
-    {
-      label: "Frame Type",
-      value: "Unframed",
-    },
-    {
-      label: "Weight",
-      value: "0.3 kg",
-    },
-    {
-      label: "Use",
-      value: "Wall decor, room styling & creative backgrounds",
-    },
-  ],
-},
+    id: "meesho-neymar-poster-set-36",
+    name: "Neymar Poster Set – 36 A6 Posters",
+    brand: "Meesho",
+    category: "Decor",
+    subcategory: "Wall Decor",
+    description:
+      "A set of 36 Neymar football posters in A6 size, perfect for wall collages, bedroom styling, football-themed rooms and creative backgrounds.",
+    price: "₹258",
+    image: "/images/store/meesho-neymar-poster-set-36.jpg",
+    affiliateUrl:
+      "https://www.meesho.com/af_invite/521184327:instagram_stories:9714842?p_id=745352740&ext_id=cbrhus&utm_source=instagram_stories",
+    merchant: "Meesho",
+    featured: false,
+    badge: "Budget Pick",
+    specifications: [
+      {
+        label: "Quantity",
+        value: "36 posters",
+      },
+      {
+        label: "Size",
+        value: "A6",
+      },
+      {
+        label: "Frame Type",
+        value: "Unframed",
+      },
+      {
+        label: "Weight",
+        value: "0.3 kg",
+      },
+      {
+        label: "Use",
+        value: "Wall decor, room styling & creative backgrounds",
+      },
+    ],
+  },
 ];
 
 /* =====================================================
