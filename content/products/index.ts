@@ -732,83 +732,122 @@ export const products: Product[] = [
     ],
   },
 
-    {
+  {
     id: "meesho-messi-poster-card-combo-30",
     name: "Messi Poster Card Combo – 30 A6 Prints",
     brand: "KARTMEN",
     category: "Decor",
     subcategory: "Wall Decor",
     description:
-        "A budget-friendly set of 30 A6 Messi poster cards, perfect for creating wall collages, decorating bedrooms or adding a football-inspired touch to your space.",
+      "A budget-friendly set of 30 A6 Messi poster cards, perfect for creating wall collages, decorating bedrooms or adding a football-inspired touch to your space.",
     price: "₹116",
     image: "/images/store/meesho-messi-poster-card-combo.jpg",
     affiliateUrl:
-        "https://www.meesho.com/af_invite/521184327:instagram_stories:9714115?p_id=674716608&ext_id=b5pio0&utm_source=instagram_stories",
+      "https://www.meesho.com/af_invite/521184327:instagram_stories:9714115?p_id=674716608&ext_id=b5pio0&utm_source=instagram_stories",
     merchant: "Meesho",
     featured: false,
     badge: "Budget Pick",
     specifications: [
-        {
+      {
         label: "Quantity",
         value: "30 prints",
-        },
-        {
+      },
+      {
         label: "Size",
         value: "A6",
-        },
-        {
+      },
+      {
         label: "Paper",
         value: "300 GSM photographic paper",
-        },
-        {
+      },
+      {
         label: "Type",
         value: "Poster",
-        },
-        {
+      },
+      {
         label: "Use",
         value: "Wall decor, room styling & gifting",
-        },
+      },
     ],
-    },
+  },
 
-    {
+  {
     id: "meesho-ronaldo-poster-set-24",
     name: "Ronaldo Poster Set – 24 Mini Posters",
     brand: "Meesho",
     category: "Decor",
     subcategory: "Wall Decor",
     description:
-        "A set of 24 Cristiano Ronaldo mini posters, perfect for wall collages, bedroom styling, football-themed rooms and creative backgrounds.",
+      "A set of 24 Cristiano Ronaldo mini posters, perfect for wall collages, bedroom styling, football-themed rooms and creative backgrounds.",
     price: "₹106",
     image: "/images/store/meesho-ronaldo-poster-set-24.jpg",
     affiliateUrl:
-        "https://www.meesho.com/af_invite/521184327:instagram_stories:9714842?p_id=745352740&ext_id=cbrhus&utm_source=instagram_stories",
+      "https://www.meesho.com/af_invite/521184327:instagram_stories:9714842?p_id=745352740&ext_id=cbrhus&utm_source=instagram_stories",
     merchant: "Meesho",
     featured: false,
     badge: "Budget Pick",
     specifications: [
-        {
+      {
         label: "Quantity",
         value: "24 posters",
-        },
-        {
+      },
+      {
         label: "Size",
         value: "15 × 10 cm",
-        },
-        {
+      },
+      {
         label: "Colour",
         value: "Multicolor",
-        },
-        {
+      },
+      {
         label: "Type",
         value: "Mini Posters",
-        },
-        {
+      },
+      {
         label: "Use",
         value: "Wall decor, room styling & creative backgrounds",
-        },
+      },
     ],
+  },
+
+  {
+  id: "meesho-neymar-poster-set-36",
+  name: "Neymar Poster Set – 36 A6 Posters",
+  brand: "Meesho",
+  category: "Decor",
+  subcategory: "Wall Decor",
+  description:
+    "A set of 36 Neymar football posters in A6 size, perfect for wall collages, bedroom styling, football-themed rooms and creative backgrounds.",
+  price: "₹258",
+  image: "/images/store/meesho-neymar-poster-set-36.jpg",
+  affiliateUrl:
+    "https://www.meesho.com/af_invite/521184327:instagram_stories:9714842?p_id=745352740&ext_id=cbrhus&utm_source=instagram_stories",
+  merchant: "Meesho",
+  featured: false,
+  badge: "Budget Pick",
+  specifications: [
+    {
+      label: "Quantity",
+      value: "36 posters",
     },
+    {
+      label: "Size",
+      value: "A6",
+    },
+    {
+      label: "Frame Type",
+      value: "Unframed",
+    },
+    {
+      label: "Weight",
+      value: "0.3 kg",
+    },
+    {
+      label: "Use",
+      value: "Wall decor, room styling & creative backgrounds",
+    },
+  ],
+},
 ];
 
 /* =====================================================
